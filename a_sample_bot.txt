@@ -1,0 +1,26 @@
+Q1. Create a new bot and add atleast two features/metrics for this page.
+
+#Let's build a simple laptop service bot step by step.
+
+1.  Create an account in kAIron powered by Digite.
+2.  Click on create chatbot button and edit the name as you required. Example: I am Bot
+3.  Click on view button.
+4.  Now lets add stories to this service bot one by one. (There are three types of stories. 1. Q & A 2. Rule 3. Custome)
+         i) Add "greet_user" Q & A story by adding some intents and utterances.
+	ex: intent name = greet (intents- Hi, Hello,...)
+	      utterance name = utter_greet(Responses: Hi I'm bot, Hello, ...)	            
+         ii) Add "service_availability" Q & A story to get to know about the service. Create an intent and it's training phrases,
+             then create utter_service_availability response.
+	ex: intents: I need service, My PC got in trouble. I need service, ...
+	      Responses: We have service centers in the below mentioned cities.
+		        Bengaluru, Hyderabad, Mumbai and Chennai.
+         iii) Add "service_at_home" Q & A story to get to know about home service. Create home_service intent and it's training phrases.
+	ex: intents: Is there home service?, Can I get service at home?, ...
+	      Responses: Of course! The home service option is available in the above mentioned cities.
+         iv) Now add "book_appointment" custome story to book an appointment to get the service.
+	.  First create "book_appointmet" intent for asking how to get an appointment.
+	.  Then create "utter_appointment" responses to ask about the required details.
+	.  Second create "details" intent for providing the corresponding details.
+	.  Then create "utter_store_details" response to store the provided details for backend.
+
+5. If the user didn't provide proper input then write "utter_default" response phrases.
